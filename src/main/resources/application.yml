@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    include: secret
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jin?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: root
+
+  devtools:
+    livereload:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+  main:
+    allow-bean-definition-overriding: true
+
+
