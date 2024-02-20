@@ -6,4 +6,6 @@ import lombok.Getter;
 @Builder
 @Getter
 public class KakaoDto {
+    private long id;
+    private String nickname;
 }
